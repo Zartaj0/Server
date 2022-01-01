@@ -14,6 +14,7 @@ app.get('/contact',function (req,res) {
 
 app.post('/contact',urlencodedParser,function (req,res) {
   console.log(req.body);
+  res.render('succesfullContact',{data:req.body})
 
 })
 
